@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Adding CSS Sheet:  <link rel="stylesheet" type="text/css" href="style2.css"> -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, user-scalable=no"
+    />
+  </head>
+  <body>
+    <!-- All the quotations are read by javascript -->
+    <p1> Enter which dishes you wish to buy </p1>
+    <div>
+      <button id = "userInputButton" onclick = "handlers.addItem()"> Enter </button>
+      <input 
+        id = "addItemTextInput" 
+        type = "text" 
+        onkeydown = "if (event.keyCode == 13) document.getElementById('userInputButton').click()"
+      </input>
+    </div>
+    <ul>
+    <!-- The list is created in here through the js -->
+    </ul>
+    <div class = "calculator">
+      <button id = "calculate" onclick = "handlers.calculateCost()"> CALCULATE </button>
+      <p1> Note: This button will show you the amount owed. Click it again to refresh if items were changed </p1>
+      <li id = "finalCost"></li>   
+    </div>
+    <!-- This division only contains an image of a quote-->
+    <div>
+      <img
+        
+        id = "quoteImage"
+        src = "https://i.pinimg.com/originals/8b/e7/c9/8be7c9c7f4bc2501036e708b53ac61f9.jpg"
+        alt = "Even More Yummy"
+        width = "360px"
+        height = "240px"
+      >
+    </div>
+
+
+  <script src = "myscript_page2.js"></script>
+
+
+    
+  </body>
+</html>
